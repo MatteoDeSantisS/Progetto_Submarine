@@ -1,0 +1,81 @@
+ 
+
+[
+{
+    "n" : "submarine1",
+    "y" : 600 ,
+    "l" : 350,
+    "w_torretta" : 120,
+    "h_torretta" : 35,
+    "h" : 40
+},
+{
+    "n" : "submarine2",
+    "y" : 150 ,
+    "l" : 140,
+    "w_torretta" : 60,
+    "h_torretta" : 18 ,
+    "h" : 23
+},
+{
+    "n" : "submarine3",
+    "y" : 250 ,
+    "l" : 170,
+    "w_torretta" : 75,
+    "h_torretta" : 15 ,
+    "h" : 25
+},
+{
+    "n" : "submarine4",
+    "y" : 350 ,
+    "l" :120,
+    "w_torretta" : 40,
+    "h_torretta" :15 ,
+    "h" : 20
+},
+{
+    "n" : "submarine5",
+    "y" : 450 ,
+    "l" : 250,
+    "w_torretta" : 90,
+    "h_torretta" : 30 ,
+    "h" : 40
+},{
+    "n" : "submarine6",
+    "y" : 550 ,
+    "l" : 160,
+    "w_torretta" : 60,
+    "h_torretta" : 15 ,
+    "h" : 25
+},{
+    "n" : "submarine7",
+    "y" : 650,
+    "l" : 200,
+    "w_torretta" : 100,
+    "h_torretta" : 32 ,
+    "h" : 40
+},{
+    "n" : "submarine8",
+    "y" : 50 ,
+    "l" : 75,
+    "w_torretta" : 45,
+    "h_torretta" : 15 ,
+    "h" : 15
+},{
+    "n" : "submarine9",
+    "y" : 380 ,
+    "l" : 170,
+    "w_torretta" : 80,
+    "h_torretta" :22,
+    "h" : 30
+},{
+    "n" : "submarine10",
+    "y" : 100 ,
+    "l" : 500,
+    "w_torretta" : 130,
+    "h_torretta" : 35 ,
+    "h" : 55
+}
+
+
+]

@@ -1,0 +1,26 @@
+
+
+.axis, .values {
+    font: 15px sans-serif;
+    color:rgb(219, 90, 4);
+}
+
+.axis path,.axis line {
+    fill: none;
+    stroke: rgb(219, 90, 4);
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    display: none;
+}
+.svg-container{
+    margin-top: 50px;
+	background-color: rgb(5, 12, 107);
+    margin-left: 450px;
+}
+p.prova{
+    margin-right: 200px;
+    text-align: left;
+    font: 20px sans-serif;
+}
