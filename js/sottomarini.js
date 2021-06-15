@@ -2,18 +2,19 @@
 
 var dataset;
 
-var margin = {top: 20, right: 20, bottom: 30, left: 40};
+var margin = {top: 50, right: 250, bottom: 115, left: 50};
 
 var width = 1300 - margin.left - margin.right;
-var height = 850 - margin.top - margin.bottom;
-
+var height = 950 - margin.top - margin.bottom;
 
 var yDepth = d3.scaleLinear().domain([0,height]).range([0,height]);
 var yAxis = d3.axisLeft(yDepth).ticks(10);
 
+var yScale;
+var xScale;
 
-var yScale = d3.scaleLinear().domain([0, height]).range([0,height-55]);
-var xScale = d3.scaleLinear().domain([0,width]).range([125,width-75]);
+
+
 var wScale = d3.scaleLinear().domain([0, 300]).range([0,120]);
 var hScale =  d3.scaleLinear().domain([0, 100]).range([0,50]);
 
@@ -30,7 +31,7 @@ function drawAxes(){
         .attr("class", "y axis")
         .attr("fill","white")
         .call(yAxis);
-    
+        
     svg.append("text")
         .attr("transform", "rotate(-90)")
         .attr("y", 15)
@@ -144,6 +145,10 @@ d3.json("data/sottomarini.json")
     nameSub=["submarine1","submarine2","submarine3","submarine4","submarine5","submarine6","submarine7","submarine8","submarine9","submarine10"]
     positionXSub=[100,200,500,700,950,600,800,100,300,1000]
     var i=0;
+    yScale = d3.scaleLinear().domain([0, d3.max(data,function(d){return d.y})]);
+    yScale.range([0,height]);
+    xScale =  d3.scaleLinear().domain([0, d3.max(positionXSub)]);
+    xScale.range([50,width]);
     for (el in data){
         if(i<=9){
             drawSubmarine(data[el],nameSub[i],nameSub,positionXSub[i]);
